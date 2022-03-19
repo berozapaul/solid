@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Notebook_1 = require("./Notebook");
+var Settings_1 = require("./Settings");
+var noteObj = new Notebook_1.Notebook();
+console.log('Creating one new node!');
+noteObj.createNewNote('I am the first ever node');
+var settingsObj = new Settings_1.Settings();
+noteObj.settings.push(settingsObj);
+console.log(noteObj);
+console.log('All nodes!');
+noteObj.showAllNotes();
