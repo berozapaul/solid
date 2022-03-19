@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var Ostrich_1 = require("./Ostrich");
-var Duck_1 = require("./Duck");
-var duckObj = new Duck_1.Duck();
-duckObj.fly();
-var ostrichObj = new Ostrich_1.Ostrich();
-ostrichObj.walk();
+var Desktop_1 = require("./Desktop");
+var Laptop_1 = require("./Laptop");
+var desktopObj = new Desktop_1.Desktop();
+desktopObj.useUSB();
+var laptopObj = new Laptop_1.Laptop();
+laptopObj.useLAN();

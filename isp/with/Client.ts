@@ -1,8 +1,8 @@
-import {Ostrich} from "./Ostrich";
-import {Duck} from "./Duck";
+import {Desktop} from "./Desktop";
+import {Laptop} from "./Laptop";
 
-const duckObj = new Duck();
-duckObj.fly();
+const desktopObj = new Desktop();
+desktopObj.useUSB();
 
-const ostrichObj = new Ostrich();
-ostrichObj.walk();
+const laptopObj = new Laptop();
+laptopObj.useLAN(); 
