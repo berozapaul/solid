@@ -1,13 +1,8 @@
-import { Notebook } from "./Notebook";
-import { Settings } from "./Settings";
+import {Macintosh} from "./Macintosh";
 
-const noteObj = new Notebook();
-console.log('Creating one new node!');
-noteObj.createNewNote('I am the first ever node');
+const osObj = new Macintosh();
+console.log('Information about Mac!');
 
-const settingsObj = new Settings();
-noteObj.settings.push(settingsObj);
-console.log(noteObj);
-
-console.log('All nodes!');
-noteObj.showAllNotes();
+console.log(osObj.getOSCreator());
+console.log(osObj.getOSCreationDate());
+console.log(osObj.getFileExtension());
