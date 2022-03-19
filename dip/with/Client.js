@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var Order_1 = require("./Order");
+var Stripe_1 = require("./Stripe");
+var PayPal_1 = require("./PayPal");
+var orderObj = new Order_1.Order('123');
+var stripeObj = new Stripe_1.Stripe();
+orderObj.initPayment(stripeObj);
+var paypalObj = new PayPal_1.PayPal();
+orderObj.initPayment(paypalObj);

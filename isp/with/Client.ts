@@ -5,4 +5,4 @@ const desktopObj = new Desktop();
 desktopObj.useUSB();
 
 const laptopObj = new Laptop();
-laptopObj.useLAN(); 
+laptopObj.useLAN();
