@@ -1,8 +1,8 @@
-import {Macintosh} from "./Macintosh";
+import {Ostrich} from "./Ostrich";
+import {Duck} from "./Duck";
 
-const osObj = new Macintosh();
-console.log('Information about Mac!');
+const duckObj = new Duck();
+duckObj.fly();
 
-console.log(osObj.getOSCreator());
-console.log(osObj.getOSCreationDate());
-console.log(osObj.getFileExtension());
+const ostrichObj = new Ostrich();
+ostrichObj.walk();
