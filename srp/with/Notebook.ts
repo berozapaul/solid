@@ -1,14 +1,13 @@
 import { Note } from './Note';
+import { Settings } from './Settings';
 
 export class Notebook {
     public readonly notes: Note[];
-    private theme: "LIGHT" | "DARK";
-    private fontSize: number;
+    public readonly settings: Settings[];
 
     constructor() {
         this.notes = [];
-        this.theme = 'LIGHT';
-        this.fontSize = 14;
+        this.settings = [];
     }
 
     public createNewNote(text: string = ""): void {
@@ -41,18 +40,6 @@ export class Notebook {
         // @ts-ignore
         const index = this.notes.findIndex(({ id }) => id === noteId);
         this.notes[index].text = newText;
-    }
-
-    public toggleTheme(): void {
-        this.theme = (this.theme === "LIGHT") ?  "DARK" : "LIGHT";
-    }
-
-    public changeFontSize(newFontSize: number): void {
-        if (newFontSize < 8 && newFontSize > 60) {
-            this.fontSize = 14;
-        } else {
-            this.fontSize = Math.floor(newFontSize);
-        }
     }
 }
 
